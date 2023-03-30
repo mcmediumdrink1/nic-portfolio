@@ -1,7 +1,8 @@
 .container {
     margin: auto;
     max-width: 500px;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
+    margin: auto;
   }
   
   .heading {
@@ -14,14 +15,20 @@
   }
   .nav-link-item {
     padding-right: 2rem;
+    font-family: "Poppins", sans-serif;
   }
   .nav-link-text {
-    color: black;
+    color: #154495;
+    font-family: "Poppins", sans-serif;
+    
   }
 
   .site-title {
     font-size: 3rem;
-    color: gray;
+    color: #CD4A00;
     font-weight: 700;
     margin: 3rem 0;
+    font-family: "Eczar", serif;
+    text-align: center;
+
   }

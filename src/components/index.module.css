@@ -14,7 +14,7 @@
 }
 
 .listItem {
-  margin: 0;
+  margin: auto;
 }
 
 .listItem::marker {

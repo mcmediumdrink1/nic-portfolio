@@ -9,8 +9,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Nic Icaza | Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `NIC ICAZA`,
+    description: `portfolio for austin, tx based creative data science professional, Nic Icaza.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
@@ -41,6 +41,18 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-  
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        web: [
+          {
+            name: `Eczar`,
+            file: `https://fonts.googleapis.com/css2?family=Eczar:wght@400;600;700&display=swap`,
+          },
+        ],
+      },
+    },
   ],
 }

@@ -15,14 +15,14 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
-    `gatsby-plugin-image`,
-    'gatsby-plugin-sharp',
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

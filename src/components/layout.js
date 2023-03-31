@@ -9,6 +9,7 @@ import {
   siteTitle,
 } from './layout.module.css'
 
+
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -22,21 +23,21 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <div className={container}>
-      <Link to="/" className={navLinkText}><header className={siteTitle}>{data.site.siteMetadata.title}</header></Link>
+      <Link to="/" className={navLinkText} style={{ textDecoration: 'none' }}><header className={siteTitle}>{data.site.siteMetadata.title}</header></Link>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
+            <Link to="/about" className={navLinkText} style={{ textDecoration: 'none' }} activeStyle={{ color: "#CD4A00" }}>
               ABOUT
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/work" className={navLinkText}>
+            <Link to="/work" className={navLinkText} style={{ textDecoration: 'none' }} activeStyle={{ color: "#CD4A00" }}>
               WORK
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
+            <Link href = "mailto: nicazatmg@gmail.com" className={navLinkText} style={{ textDecoration: 'none' }} activeStyle={{ color: "#CD4A00" }}>
               CONTACT
             </Link>
           </li>

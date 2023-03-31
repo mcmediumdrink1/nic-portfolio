@@ -41,7 +41,6 @@
 
   }
 
-  .home-image {
-    margin: auto;
-    max-width: 500px;
-  }
+  .static-image {
+    position: absolute
+}

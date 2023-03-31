@@ -5,7 +5,7 @@ const ITPCamp = () => {
   return (
     <Layout pageTitle="ITP Camp">
       <p>Howdy from Texas,</p>
-      <p>My name is Nic and I am a data science professional working in the marketing/advertising industry, with more than 6 years combined leading website and organic social media measurement on behalf of the U.S. Department of Defense recruiting mission for Navy [2016 - 2020], as well as Air Force, and our newest branch, Space Force [2020 - present].</p>
+      <p>My name is Nic and I am a data science professional working in the marketing/advertising industry, with more than 6 years combined experience leading website and organic social media measurement on behalf of the U.S. Department of Defense recruiting mission for Navy [2016 - 2020], as well as Air Force, and our newest branch, Space Force [2020 - present].</p>
       <p>I have learned so much in these roles and I have been given the freedom to grow and the encouragement to move with curiosity and to take risks, both professionally and personally. The next challenge I foresee for myself is to explore the field of data not just as a mode of interpretation, but also as an outlet for creation. </p>
       <p>NYU’s ITP Summer Camp seems like just the right avenue to immerse myself in a culture of change and inventiveness and to share back with the community a perspective and experience that is uniquely my own. </p>
       <p>As a foray into my expressive aspirations, I’ve conceptualized a sample project to explore in ITP Summer Camp, with background information below for consideration.</p>

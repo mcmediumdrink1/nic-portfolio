@@ -7,6 +7,7 @@ import {
   navLinkItem,
   navLinkText,
   siteTitle,
+  homeImage
 } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {

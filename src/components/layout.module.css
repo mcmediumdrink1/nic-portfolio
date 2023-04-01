@@ -1,5 +1,46 @@
 .container {
     margin: auto;
-    max-width: 500px;
-    font-family: sans-serif;
+    max-width: 1200px;
+    font-family: "Poppins", sans-serif;
+    margin: auto;
   }
+  
+  .heading {
+    color: #154495;
+    font-family: "Eczar",serif;
+    font-weight: 550;
+    text-align: right;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  .nav-link-item {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  .nav-link-text {
+    color:#2455A4;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    
+  }
+
+  .site-title {
+    font-size: 2.5rem;
+    color: #CD4A00;
+    font-weight: 550;
+    margin: 3rem 0;
+    font-family: "Eczar", serif;
+    text-align: center;
+
+  }
+
+  .static-image {
+    position: absolute
+}

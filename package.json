@@ -5,15 +5,21 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fontsource/eczar": "^4.5.12",
+    "@fontsource/poppins": "^4.5.10",
+    "@mdx-js/react": "^2.3.0",
     "gatsby": "^5.9.0-next.0",
     "gatsby-cli": "^5.8.0",
+    "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.8.0",
     "gatsby-plugin-manifest": "^5.8.0",
+    "gatsby-plugin-mdx": "^5.8.0",
     "gatsby-plugin-sharp": "^5.8.0",
     "gatsby-source-filesystem": "^5.8.0",
     "gatsby-transformer-sharp": "^5.8.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "prettier": "^2.8.4"
@@ -33,9 +39,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-default.git"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-default#readme",
+  "main": "gatsby-browser.js"
 }

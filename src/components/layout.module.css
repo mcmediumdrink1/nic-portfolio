@@ -1,8 +1,8 @@
 .container {
     margin: auto;
-    max-width: 1200px;
+    max-width: auto;
     font-family: "Poppins", sans-serif;
-    margin: auto;
+    padding:60px;
   }
   
   .heading {

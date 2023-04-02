@@ -10,6 +10,10 @@ import {
   siteTitle,
   subHeader
 } from './layout.module.css'
+import {FaBars} from 'react-icons/fa'
+import { GlobalStyle } from './GlobalStyles'
+import {menuData} from '../data/MenuData'
+import { Button } from './Button'
 
 
 function Layout({ pageTitle, children }) {
@@ -25,36 +29,91 @@ function Layout({ pageTitle, children }) {
   `)
 
   return (
+
     <div className={container}>
-      <Link to="/" className={navLinkText} style={{ textDecoration: 'none' }}>
+
+       <Nav>
+       <Link to="/" className={navLinkText} style={{ textDecoration: 'none' }}>
         <header className={siteTitle}>{data.site.siteMetadata.title}</header>
         <h1 className={subHeader}>{data.site.siteMetadata.subHeader}</h1>
-      </Link>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText} style={{ textDecoration: 'none' }} activeStyle={{ color: "#CD4A00" }}>
-              ABOUT
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/work" className={navLinkText} style={{ textDecoration: 'none' }} activeStyle={{ color: "#CD4A00" }}>
-              WORK
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link href="mailto: nicazatmg@gmail.com" className={navLinkText} style={{ textDecoration: 'none' }} activeStyle={{ color: "#CD4A00" }}>
-              CONTACT
-            </Link>
-          </li>
-        </ul>
-      </nav>
+        </Link>
+       <Bars />
+        <NavMenu>
+          {menuData.map((item,index) => (
+            <NavLink to={item.link} key={index}>
+              {item.title}
+            </NavLink>
+          ))}
+        </NavMenu>
+        <NavBtn>
+          <Button primary="true" round="true">Book a Flight</Button>
+        </NavBtn>
+        </Nav>
+
+     
       <main>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
     </div>
+
   )
 }
 
+
 export default Layout
+
+
+
+const Nav = styled.nav`
+height: 80px;
+display: flex;
+justify-content: space-between;
+padding: 0.5rem calc((100vw - 1300px)/2);
+z-index: 100;
+position: relative;
+`
+const Bars = styled(FaBars)`
+display:none;
+fill: #fff;
+
+@media screen and (max-width: 768px) {
+  display: block;
+  position: absolute
+  top: 0;
+  right: 0;
+  transform: translate (-100%, 75%);
+  fill: #CD4A00;
+  font-size:1.8rem;
+  cursor: pointer;
+}
+`
+const NavLink = styled(Link)`
+fill: #CD4A00;
+display:flex;
+align-items: center;
+text-decoration: none;
+padding: 0 1rem;
+height: 100%;
+cursor: pointer;
+`
+const NavMenu = styled.div`
+display: flex;
+align-items:center;
+fill: #CD4A00;
+
+@media screen and (max-width: 768px){
+display: none;
+
+}
+`
+
+const NavBtn = styled.div`
+display: flex;
+align-items: center;
+margin-right: 24px;
+
+@media screen and (max-width: 768px){
+  display: none;
+}
+`

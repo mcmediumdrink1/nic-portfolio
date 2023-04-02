@@ -1,8 +1,7 @@
 .container {
     margin: auto;
     max-width: auto;
-    font-family: "Poppins", sans-serif;
-    padding:60px;
+ 
   }
   
   .heading {
@@ -44,10 +43,10 @@
     position: absolute
 }
 
-.sub-header {
+  .sub-header {
   font-size: 1rem;
   color: #CD4A00;
-  font-weight: 200;
+  font-weight: 20;
   padding-bottom: 60px;
   padding-left: 15px;
    font-family: "Eczar", serif;

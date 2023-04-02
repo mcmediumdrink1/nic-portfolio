@@ -35,7 +35,6 @@
     font-size: 2.5rem;
     color: #CD4A00;
     font-weight: 550;
-    margin: 3rem 0;
     font-family: "Eczar", serif;
     text-align: center;
 
@@ -43,4 +42,14 @@
 
   .static-image {
     position: absolute
+}
+
+.sub-header {
+  font-size: 1rem;
+  color: #CD4A00;
+  font-weight: 200;
+  padding-bottom: 60px;
+  padding-left: 15px;
+   font-family: "Eczar", serif;
+  text-align: center;
 }

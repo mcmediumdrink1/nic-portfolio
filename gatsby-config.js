@@ -10,7 +10,7 @@
 module.exports = {
   siteMetadata: {
     title: `NIC ICAZA`,
-    subheader: "Cretivity in Data",
+    subHeader: "Creativity in Data",
     description: `portfolio for austin, tx based creative data science professional, Nic Icaza.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
@@ -28,6 +28,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,  
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

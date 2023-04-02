@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
 import {
   container,
   heading,
@@ -7,15 +8,17 @@ import {
   navLinkItem,
   navLinkText,
   siteTitle,
+  subHeader
 } from './layout.module.css'
 
 
-const Layout = ({ pageTitle, children }) => {
+function Layout({ pageTitle, children }) {
   const data = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
-          title
+          title,
+          subHeader
         }
       }
     }
@@ -23,7 +26,10 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <div className={container}>
-      <Link to="/" className={navLinkText} style={{ textDecoration: 'none' }}><header className={siteTitle}>{data.site.siteMetadata.title}</header></Link>
+      <Link to="/" className={navLinkText} style={{ textDecoration: 'none' }}>
+        <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+        <h1 className={subHeader}>{data.site.siteMetadata.subHeader}</h1>
+      </Link>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -37,7 +43,7 @@ const Layout = ({ pageTitle, children }) => {
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link href = "mailto: nicazatmg@gmail.com" className={navLinkText} style={{ textDecoration: 'none' }} activeStyle={{ color: "#CD4A00" }}>
+            <Link href="mailto: nicazatmg@gmail.com" className={navLinkText} style={{ textDecoration: 'none' }} activeStyle={{ color: "#CD4A00" }}>
               CONTACT
             </Link>
           </li>

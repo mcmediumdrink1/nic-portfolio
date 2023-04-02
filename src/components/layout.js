@@ -46,15 +46,12 @@ function Layout({ pageTitle, children }) {
           ))}
         </NavMenu>
         <NavBtn>
-          <Button primary="true" round="true">Book a Flight</Button>
+          <Button to = "/" big="true" primary="true" round="true">Get Info</Button>
         </NavBtn>
         </Nav>
-
-     
-      <main>
-        <h1 className={heading}>{pageTitle}</h1>
+    <main>
         {children}
-      </main>
+    </main>
     </div>
 
   )
@@ -66,7 +63,8 @@ export default Layout
 
 
 const Nav = styled.nav`
-height: 80px;
+background: transparent;
+height: 100px;
 display: flex;
 justify-content: space-between;
 padding: 0.5rem calc((100vw - 1300px)/2);
@@ -112,6 +110,7 @@ const NavBtn = styled.div`
 display: flex;
 align-items: center;
 margin-right: 24px;
+
 
 @media screen and (max-width: 768px){
   display: none;

@@ -14,7 +14,7 @@
 // export default Main
 
 import React, {useRef, useEffect} from "react"
-import pacificOcean from '../assets/USN-embark-pacific-ocean-nic.mp4'
+import pacificOcean from '../assets/videos/USN-embark-pacific-ocean-nic.mp4'
 
 export default function Main(props) {
     const videoRef = useRef(undefined);

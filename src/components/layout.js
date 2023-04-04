@@ -78,11 +78,12 @@ fill: #F2EFE8;
 @media screen and (max-width: 768px) {
   display: block;
   position: absolute
-  padding-top: 10px;
+  padding-top: 15px;
   padding-right: 15px;
   transform: translate (-100%, 75%);
   fill: #F2EFE8;
-  font-size:1.8rem;
+  font-size:1.5rem;
+  stroke-width=.5;
   cursor: pointer;
 }
 `

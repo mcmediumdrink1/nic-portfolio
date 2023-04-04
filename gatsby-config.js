@@ -90,20 +90,5 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    {
-      language: {
-        whatis: null,
-        bottomImage: null,
-        commonUseCases: null,
-        companies: null,
-        featuredImg: null,
-        features: null,
-        languageImg: null,
-        name: null,
-        technologies: null,
-        title: '',
-        topics: null
-      }
-    },
   ],
 }

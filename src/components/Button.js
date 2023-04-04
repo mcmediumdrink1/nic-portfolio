@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const Button = styled(Link)`
-background: ${({primary}) => (primary ? '#CD4A00' : '#077BF1')};
+background: ${({primary}) => (primary ? '#CD4A00' : '#154495')};
 white-space: nowrap;
-padding: ${({big}) => (big ? '16px 40px' : '10px 32px')};
+padding: ${({big}) => (big ? '12px 30px' : '10px 32px')};
 color: #fff
 font-size: ${({big}) => (big ? '20px' : '16px')};
 outline: none;
@@ -13,12 +13,12 @@ min-width: 100px;
 cursor: pointer;
 text-decoration: none;
 transition: 0.3s !important;
-border-radius: ${({round}) => (round ? '50px': 'none')};
+border-radius: ${({round}) => (round ? '40px': 'none')};
 align-text:center;
 
 
 &:hover {
-    background: ${({primary}) => (primary ? '#077BF1' : '#CD4A00')};
+    background: ${({primary}) => (primary ? '#154495' : '#CD4A00')};
     transform: translateY(-2px);
 }
 `

@@ -6,15 +6,15 @@ import {
 } from './index.module.css'
 import SEO from '../components/seo'
 import Hero from '../components/Hero'
+import Info from '../components/Info'
 
 
 const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home | Nic Icaza" />
-
       <Hero />
-  
+      <Info />
 
     </Layout>
   )

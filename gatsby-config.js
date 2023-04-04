@@ -20,11 +20,30 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `blog`,
         path: `${__dirname}/blog`,
+      },
+    },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `videos`,
+        path: `${__dirname}/src/assets/videos`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -51,8 +70,40 @@ module.exports = {
             name: `Eczar`,
             file: `https://fonts.googleapis.com/css2?family=Eczar:wght@400;600;700&display=swap`,
           },
+          {
+            name: `Poppins`,
+            file: `https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap`,
+          },
+          {
+            name: `Caudex`,
+            file: `https://fonts.googleapis.com/css2?family=Caudex:wght@400;600;700&display=swap`,
+          },
         ],
       },
+      
+      
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
+    {
+      language: {
+        whatis: null,
+        bottomImage: null,
+        commonUseCases: null,
+        companies: null,
+        featuredImg: null,
+        features: null,
+        languageImg: null,
+        name: null,
+        technologies: null,
+        title: '',
+        topics: null
+      }
     },
   ],
 }

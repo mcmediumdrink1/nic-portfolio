@@ -1,0 +1,32 @@
+[
+    {
+        "img": "../assets/images/seurat-a-sunday-on-la-grande-jatte.png",
+        "alt": "Pointilism",
+        "name": "Pointilism",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/sunset.png",
+        "alt": "Sunset",
+        "name": "Sunset",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/texture.png",
+        "alt": "Texture",
+        "name": "Texture",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/thurman-the-fifty-three-percent-black-lab.png",
+        "alt": "Thurman",
+        "name": "Thurman",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/usaf-integrated-marketing-channel-dashboard.png",
+        "alt": "Integrated Dashboard",
+        "name": "Integrated Dashboard",
+        "button": "View Destination"
+    }
+]

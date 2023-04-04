@@ -25,29 +25,43 @@
   .nav-link-text {
     font-family: "Poppins", sans-serif;
     text-align: center;
+    display:block;
+    align-items: center;
+
     
   }
 
   .site-title {
     font-size: 1.25rem;
     color: #F2EFE8;
-    font-weight: 500;
+    font-weight: 550;
     font-family: "Eczar", serif;
-    text-align: center;
-    padding-left: 15px;
-
+    fill: #F2EFE8;
+    display:flex;
+    text-decoration: none;
+    padding: 0 2rem;
+    margin-top: 1rem;
+    height:30%;
+    cursor: pointer;
+    bottom:0;
+    align-items:center;
+    
   }
 
   .static-image {
     position: absolute
 }
 
-  .sub-header {
-  font-size: .65rem;
+.sub-header {
+  font-size: .7rem;
   color: #F2EFE8;
-  font-weight: 1;
-  padding-bottom: 60px;
-  padding-left: 15px;
-  font-family: "Eczar", serif;
-  text-align: center;
+  padding-top: -60px;
+  font-family: "Caudex", serif;
+  fill: #F2EFE8;
+  align-items: bottom;
+  text-decoration: none;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  font-weight: lighter;
+  letter-spacing: 0.10em;
 }

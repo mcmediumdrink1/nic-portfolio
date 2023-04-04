@@ -11,17 +11,11 @@ const Hero = () => {
         <VideoBg src={Video} type="video/mp4" autoPlay muted loop playsInline/>
         </HeroBg>
         <HeroContent>
-        <PhotoBg src={Photo} type="img/jpeg" />
             <HeroItems>
-
-                <HeroH1>
-                    Nic Icaza
-                </HeroH1>
+            <PhotoBg src={Photo} type="img/jpeg"/>
                 <HeroP>
-                    Creativity in Data
+                Nic is an Austin, TX based data science professional with a strong focus on advancing creative momentum through technology and data.
                 </HeroP>
-
-                <Button big="true" primary ="true" round="true">ITP Camp</Button>
             </HeroItems>
         </HeroContent>
     </HeroContainer>
@@ -39,10 +33,18 @@ padding: 0 1rem;
 position: relative;
 margin-top:-96px;
 color: #fff;
-
+:before{
+    content:"";
+    position: absolute;
+    top:0;
+bottom: 0;
+right: 0;
+left: 0;
+z-index: 2;
+background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.6) 100%,),linear-gradient(180deg, rgba(0,0,0,0.2) 0%,transparent 100%,)
+}
 `
 const HeroBg =  styled.div`
-background: green;
 position: absolute;
 top:0;
 bottom:0;
@@ -63,12 +65,17 @@ object-fit: cover;
 `
 const PhotoBg =  styled.img`
 background: transparent;
-max-width: 80vw;
-max-height: 80vh;
+max-width: 70vw;
+max-height: 70vh;
+padding-top: 100px;
 object-fit: constrained;
 justify-content: center;
 align-items: center;
-opacity: 0.85;
+opacity: 0.80;
+
+/*&:hover {
+    transform: scale(1.01);
+}*/
 `
 const HeroContent =  styled.div`
 z-index: 3;
@@ -98,9 +105,11 @@ padding: 0 1rem;
 
 `
 const HeroP =  styled.p`
-font-size: clamp(1rem, 3vw, 3rem);
+font-size: clamp(.75rem, 1vw, 1.25rem);
 margin-bottom: 2rem;
-
+font-family: "Poppins",sans-serif;
+fill: #F2EFE8;
+letter-spacing: 0.2em;
 `
 
 

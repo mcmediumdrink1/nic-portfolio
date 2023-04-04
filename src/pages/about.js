@@ -4,10 +4,13 @@ import { StaticImage } from 'gatsby-plugin-image'
 import {
   aboutImage
 } from './index.module.css'
+import styled from 'styled-components'
+
 
 const AboutPage = () => {
   return (
     <Layout pageTitle="About">
+      <HeroContainer>
       <StaticImage 
         alt="Photo of Texas Sunset Captured by Nic"
         src="https://lh3.googleusercontent.com/pw/AMWts8CyRn-I4QifB3ov6Q7yf8sxfEKoCSNHW1keyCUP75oJo7ctdILXd7XwIHHWoqtTlcLDsFBtfo3dal6xEuc2RUSLvnX7osTSE-KU7B1mwRhvP70N9p7e1j13zJherujp6fpI1JyT3cVRQL5kSuN30ulD0Q=w774-h722-s-no?authuser=0"
@@ -19,10 +22,33 @@ const AboutPage = () => {
       <br /><p>After college, Nic relocated to Memphis, TN where he embarked on developing his professional career. Nic has such a soft spot for Memphis and has considered the city a spiritual second-home since childhood when visiting with family. He asserts that you’ll find the best chicken wings in Memphis.</p>
       <br /><p>In early 2021, Nic threw all caution to the wind and moved to Austin, TX, despite not having any friends or family in the city and still in the midst of the pandemic. Nic still resides in ATX with his best friend and companion, Thurman. According to the numbers, there are 14 distinct dog breeds found in Thurman’s DNA, which includes 53% Labrador Retriever, 13% German Shorthaired Pointer, and 8% English Setter.</p>
       <br /> <p>When not chasing squirrels at the park with Thurman, Nic enjoys mixed-medium art (watercolor, acrylic, charcoal, pencil drawing) and he has recently taken up film photography (medium format 120 film). You may also find Nic noodling on the guitar, powerlifting, writing, baking bread and pastries from scratch, and daydreaming live concert productions as he listens to music on Spotify.</p>
+      </HeroContainer>
     </Layout>
+
   )
 }
 
 export const Head = () => <title>About | Nic Icaza</title>
 
 export default AboutPage
+
+const HeroContainer =  styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+padding: 0 1rem;
+position: relative;
+margin-top:-96px;
+color: #fff;
+:before{
+    content:"";
+    position: absolute;
+    top:0;
+bottom: 0;
+right: 0;
+left: 0;
+z-index: 2;
+background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.6) 100%,),linear-gradient(180deg, rgba(0,0,0,0.2) 0%,transparent 100%,)
+}
+`

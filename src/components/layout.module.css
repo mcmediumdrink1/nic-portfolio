@@ -5,7 +5,7 @@
   }
   
   .heading {
-    color: #154495;
+    color: #fff;
     font-family: "Eczar",serif;
     font-weight: 550;
     text-align: right;
@@ -24,18 +24,19 @@
     text-align: center;
   }
   .nav-link-text {
-    color:#2455A4;
+    color:#fff;
     font-family: "Poppins", sans-serif;
     text-align: center;
     
   }
 
   .site-title {
-    font-size: 2.5rem;
-    color: #CD4A00;
-    font-weight: 550;
+    font-size: 1.5rem;
+    color: #F2EFE8;
+    font-weight: 500;
     font-family: "Eczar", serif;
     text-align: center;
+    padding-left: 15px;
 
   }
 
@@ -44,9 +45,9 @@
 }
 
   .sub-header {
-  font-size: 1rem;
-  color: #CD4A00;
-  font-weight: 20;
+  font-size: .85rem;
+  color: #F2EFE8;
+  font-weight: 1;
   padding-bottom: 60px;
   padding-left: 15px;
    font-family: "Eczar", serif;

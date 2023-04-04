@@ -64,7 +64,7 @@ export default Layout
 
 const Nav = styled.nav`
 background: transparent;
-height: 100px;
+height: 80px;
 display: flex;
 justify-content: space-between;
 padding: 0.5rem calc((100vw - 1300px)/2);
@@ -73,21 +73,22 @@ position: relative;
 `
 const Bars = styled(FaBars)`
 display:none;
-fill: #fff;
+fill: #F2EFE8;
 
 @media screen and (max-width: 768px) {
   display: block;
   position: absolute
-  top: 0;
-  right: 0;
+  padding-top: 10px;
+  padding-right: 15px;
   transform: translate (-100%, 75%);
-  fill: #CD4A00;
+  fill: #F2EFE8;
   font-size:1.8rem;
   cursor: pointer;
 }
 `
 const NavLink = styled(Link)`
 fill: #CD4A00;
+text-color:fff;
 display:flex;
 align-items: center;
 text-decoration: none;

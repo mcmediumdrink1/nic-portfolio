@@ -8,6 +8,7 @@ import styled from 'styled-components'
 const WorkPage = () => {
   return (
     <Layout pageTitle="Work">
+      <Work>
       <section><p>Pictured above is a sample dashboard designed for USAF Recruiting to encompass cross-channel marketing performance. Please note that the charts shown above include only mock sample data and do not reflect true performance in order to protect sensitive client information.</p>
       <br /><p>Data analytics often feels esoteric and confounding to the very people who benefit most from its understanding. In other words, measuring and interpreting data is not a lite task, especially taking complex concepts and calculations and conveying them to the layperson.</p>
       <br /><p>And then, we’re faced with another dilemma. All too often, the road to delivering these clean and ‘easy to digest’ analyses strips us of all imagination in how findings are presented.</p>
@@ -24,6 +25,7 @@ const WorkPage = () => {
 - Writing Python scripts for web scraping, as well as data ETL and creating notebooks for data analysis
 - Web design and development (including this very website) </p>
 </section>
+</Work>
     </Layout>
   )
 }
@@ -31,3 +33,14 @@ const WorkPage = () => {
 export const Head = () => <title>Work | Nic Icaza</title>
 
 export default WorkPage
+
+const Work =  styled.div`
+min-height: 120vh;
+max-height: 150vh;
+padding: 5rem calc((100vw - 2000px)/2);
+background: #181B2C;
+color: #fff;
+margin-top:-96px;
+padding-top: 120px;
+}
+`

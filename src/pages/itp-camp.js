@@ -7,6 +7,7 @@ import styled from 'styled-components'
 const ITPCamp = () => {
   return (
     <Layout pageTitle="ITP Camp">
+      <Camp>
       <p>Howdy from Texas,</p>
       <br /><p>My name is Nic and I am a data science professional working in the marketing/advertising industry, with more than 6 years combined experience leading website and organic social media measurement on behalf of the U.S. Department of Defense recruiting mission for Navy [2016 - 2020], as well as Air Force, and our newest branch, Space Force [2020 - present].</p>
       <br /> <p>I have learned so much in these roles and I have been given the freedom to grow and the encouragement to move with curiosity and to take risks, both professionally and personally. The next challenge I foresee for myself is to explore the field of data not just as a mode of interpretation, but also as an outlet for creation. </p>
@@ -39,6 +40,8 @@ After the data is transformed, the returned feedback will be our one-of-one acco
 <br /><p>I appreciate the time and attention you’ve given to my application. I am looking forward to attending NYU’s ITP Summer Camp 2023 and so hopeful to develop this project (and others) with backing from a community of like-minded and restless Campers, Session Leaders, and Counselors.</p>
 <br /><p>Cheers,</p>
 <br /><p>-Nic</p>
+
+</Camp>
     </Layout>
   )
 }
@@ -46,3 +49,14 @@ After the data is transformed, the returned feedback will be our one-of-one acco
 export const Head = () => <title>Work | Nic Icaza</title>
 
 export default ITPCamp
+
+const Camp =  styled.div`
+min-height: 120vh;
+max-height: 150vh;
+padding: 5rem calc((100vw - 2000px)/2);
+background: #181B2C;
+color: #fff;
+margin-top:-96px;
+padding-top: 120px;
+}
+`

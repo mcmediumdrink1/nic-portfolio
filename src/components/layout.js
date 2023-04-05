@@ -10,10 +10,12 @@ import {
   siteTitle,
   subHeader
 } from './layout.module.css'
-import {FaBars} from 'react-icons/fa'
 import { GlobalStyle } from './GlobalStyles'
 import {menuData} from '../data/MenuData'
 import { Button } from './Button'
+import {FaBars} from 'react-icons/fa'
+import {useState} from 'react'
+
 
 
 function Layout({ pageTitle, children }) {
@@ -28,6 +30,16 @@ function Layout({ pageTitle, children }) {
     }
   `)
 
+  const [showMenu, setShowMenu] = useState(false)
+
+  let menu
+
+  if(showMenu){
+    menu=
+    <HMenu>
+    </HMenu>
+  }
+
   return (
 
     <div className={container}>
@@ -37,7 +49,9 @@ function Layout({ pageTitle, children }) {
         <header className={siteTitle}>{data.site.siteMetadata.title}</header>
         <h1 className={subHeader}>{data.site.siteMetadata.subHeader}</h1>
         </Link>
-       <Bars />
+      <span>
+       <Bars onClick ={() => setShowMenu(!showMenu)}/>
+      </span>
         <NavMenu>
           {menuData.map((item,index) => (
             <NavLink to={item.link} key={index}>
@@ -46,11 +60,13 @@ function Layout({ pageTitle, children }) {
           ))}
         </NavMenu>
         <NavBtn>
-          <Button to = "/" big="true" primary="true" round="true">Get Information</Button>
+          <Button to = "/" big="true" primary="true" round="true">Contact</Button>
         </NavBtn>
         </Nav>
+        {menu}
     <main>
         {children}
+
     </main>
     </div>
 
@@ -71,24 +87,7 @@ padding: 0.5rem calc((100vw - 3000px)/2);
 z-index: 100;
 position: relative;
 `
-const Bars = styled(FaBars)`
-display:none;
-fill: #F2EFE8;
 
-@media screen and (max-width: 768px) {
-  display: block;
-  position: absolute
-  padding: 0 2rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  transform: translate (-100%, 75%);
-  fill: #F2EFE8;
-  font-size:1.5rem;
-  font-weight: lighter;
-  stroke-width= 0.5;
-  cursor: pointer;
-}
-`
 const NavLink = styled(Link)`
 fill: #F2EFE8;
 text-color:F2EFE8;
@@ -121,4 +120,33 @@ margin-right: 1rem;
 @media screen and (max-width: 768px){
   display: none;
 }
+`
+const Bars = styled(FaBars)`
+display:none;
+fill: #F2EFE8;
+
+@media screen and (max-width: 768px) {
+  display: block;
+  position: absolute
+  padding: 0 2rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  transform: translate (-100%, 75%);
+  fill: #F2EFE8;
+  font-size:1.5rem;
+  font-weight: lighter;
+  stroke-width= 0.5;
+  cursor: pointer;
+}
+`
+
+const HMenu = styled.div`
+position: fixed;
+background: #DEC4E9;
+top:0;
+left:0;
+height:100%;
+width: 100%;
+z-index: 50;
+opacity: 90%;
 `

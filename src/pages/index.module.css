@@ -63,13 +63,39 @@
 
 }
 .about-image{
-  display: block;
+  display:flex;
   margin-left: auto;
-  width: 50%;
   /*max-width: 600px;*/
-  justify-content: 'right',
+  justify-content: 'right';
+  filter: brightness(70%);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  float: right;
+  object-fit:fill;
 
+&hover{
+  filter: brightness(100%);
+
+} 
 }
+.thurman-image{
+  display:flex;
+  margin-right: auto;
+  /*max-width: 600px;*/
+  justify-content: 'left';
+  min-height:50%;
+  min-width: 50%;
+  filter: brightness(70%);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1.5);
+  float: right;
+  object-fit:fill;
+  border-radius: 100%;
+
+&hover{
+  filter: brightness(100%);
+
+} 
+}
+
 *{
   margin: 0px;
   padding:0;

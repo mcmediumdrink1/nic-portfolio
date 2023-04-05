@@ -52,5 +52,8 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-default#readme",
-  "main": "gatsby-browser.js"
+  "main": "gatsby-browser.js",
+  "resolutions": {
+    "sharp": "0.24.0"
+  }
 }

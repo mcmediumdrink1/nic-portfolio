@@ -37,6 +37,16 @@ function Layout({ pageTitle, children }) {
   if(showMenu){
     menu=
     <HMenu>
+      <MobileNavMenu>
+        <MobileNavLink>
+          <MobileLinkList >
+          <MobileLink><a href = "/about" style={{ textDecoration: 'none' }}>About</a></MobileLink>
+          <MobileLink><a href = "/work" style={{ textDecoration: 'none' }}>Work</a></MobileLink>
+          <MobileLink><a href = "/itp-camp" style={{ textDecoration: 'none' }}>ITP Camp</a></MobileLink>
+          <MobileLink><a href = "mailto: nicazatmg@gmail.com" style={{ textDecoration: 'none' }}>Contact</a></MobileLink>
+</MobileLinkList>
+</MobileNavLink>
+</MobileNavMenu>
     </HMenu>
   }
 
@@ -66,7 +76,6 @@ function Layout({ pageTitle, children }) {
         {menu}
     <main>
         {children}
-
     </main>
     </div>
 
@@ -79,7 +88,6 @@ export default Layout
 
 
 const Nav = styled.nav`
-background: transparent;
 height: 80px;
 display: flex;
 justify-content: space-between;
@@ -108,6 +116,34 @@ fill: #F2EFE8;
 display: none;
 
 }
+`
+const MobileNavMenu = styled.div`
+display: none;
+
+@media screen and (max-width: 768px){
+  display: fixed;
+  align-items:center;
+  fill: #red;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+`
+const MobileNavLink = styled(Link)`
+fill: red;
+text-color: red;
+font-size: 0.75rem;
+display:flex;
+align-items: center;
+text-decoration: none;
+padding: 0 1rem;
+height: 45%;
+cursor: pointer;
+float: right;
 `
 
 const NavBtn = styled.div`
@@ -148,5 +184,19 @@ left:0;
 height:100%;
 width: 100%;
 z-index: 50;
-opacity: 90%;
+opacity: 95%;
+font-family: "Eczar",serif;
+
+`
+const MobileLinkList = styled.ul`
+background: #DEC4E9;
+font-family: "Eczar",serif;
+list-style-type:none;
+
+`
+const MobileLink = styled.li`
+background: #DEC4E9;
+cursor: pointer;
+font-family: "Eczar",serif;
+font-size: 3rem;
 `

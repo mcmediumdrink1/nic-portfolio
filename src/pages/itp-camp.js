@@ -53,7 +53,7 @@ export default ITPCamp
 const Camp =  styled.div`
 min-height: 120vh;
 max-height: 150vh;
-padding: 5rem calc((100vw - 2000px)/2);
+padding: 0 2rem;
 background: #181B2C;
 color: #fff;
 margin-top:-96px;

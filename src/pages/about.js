@@ -70,7 +70,7 @@ min-height: 120vh;
 max-height: 150vh;
 padding: 5rem calc((100vw - 2000px)/2);
 background: #181B2C;
-color: #fff;
+color: #181B2C;
 margin-top:-96px;
 padding-top: 120px;
 }
@@ -86,9 +86,11 @@ position: relative;
 
 @media screen and (max-width:868px) {
   grid-template-columns: 1fr;
+  background: #181B2C;
 }
 `
 const WrapperAlt =  styled.div`
+background:#181B2C;
 display:grid ;
 grid-template-columns: 1fr 2fr;
 padding: 0 2rem;
@@ -114,4 +116,5 @@ padding-right:24px;
 const AboutP2 = styled.p`
 font-size: clamp(.75rem, 1vw, 1.5rem);
 padding-left:24px;
+padding-bottom: 120px;
 `

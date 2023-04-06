@@ -40,10 +40,11 @@ function Layout({ pageTitle, children }) {
       <MobileNavMenu>
         <MobileNavLink>
           <MobileLinkList >
-          <a href = "/about" style={{ textDecoration: 'none' }}><MobileLink>About</MobileLink></a>
-          <a href = "/work" style={{ textDecoration: 'none' }}><MobileLink>Work</MobileLink></a>
-          <a href = "/itp-camp" style={{ textDecoration: 'none' }}><MobileLink>ITP Camp</MobileLink></a>
-          <a href = "mailto: nicazatmg@gmail.com" style={{ textDecoration: 'none' }}><MobileLink>Contact</MobileLink></a>
+          {menuData.map((item,index) => (
+            <MobileNavLink to={item.link} key={index}>
+              {item.title}
+            </MobileNavLink>
+          ))}
 </MobileLinkList>
 </MobileNavLink>
 </MobileNavMenu>
@@ -136,14 +137,16 @@ display: none;
 const MobileNavLink = styled(Link)`
 fill: red;
 text-color: red;
-font-size: 0.75rem;
+font-size: 3rem;
 display:flex;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
 height: 45%;
 cursor: pointer;
-float: right;
+float: center;
+font-family: "Caudex",serif;
+margin-top: 3rem;
 `
 
 const NavBtn = styled.div`

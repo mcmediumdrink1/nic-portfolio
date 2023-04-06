@@ -198,5 +198,6 @@ const MobileLink = styled.li`
 background: #DEC4E9;
 cursor: pointer;
 font-family: "Eczar",serif;
-font-size: 3rem;
+font-size: clamp(1rem, 1vw, 3rem);
+
 `

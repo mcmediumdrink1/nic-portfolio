@@ -40,10 +40,10 @@ function Layout({ pageTitle, children }) {
       <MobileNavMenu>
         <MobileNavLink>
           <MobileLinkList >
-          <MobileLink><a href = "/about" style={{ textDecoration: 'none' }}>About</a></MobileLink>
-          <MobileLink><a href = "/work" style={{ textDecoration: 'none' }}>Work</a></MobileLink>
-          <MobileLink><a href = "/itp-camp" style={{ textDecoration: 'none' }}>ITP Camp</a></MobileLink>
-          <MobileLink><a href = "mailto: nicazatmg@gmail.com" style={{ textDecoration: 'none' }}>Contact</a></MobileLink>
+          <a href = "/about" style={{ textDecoration: 'none' }}><MobileLink>About</MobileLink></a>
+          <a href = "/work" style={{ textDecoration: 'none' }}><MobileLink>Work</MobileLink></a>
+          <a href = "/itp-camp" style={{ textDecoration: 'none' }}><MobileLink>ITP Camp</MobileLink></a>
+          <a href = "mailto: nicazatmg@gmail.com" style={{ textDecoration: 'none' }}><MobileLink>Contact</MobileLink></a>
 </MobileLinkList>
 </MobileNavLink>
 </MobileNavMenu>

@@ -138,6 +138,7 @@ const MobileNavLink = styled(Link)`
 fill: red;
 text-color: red;
 font-size: 3rem;
+font-weight: bold;
 display:flex;
 align-items: center;
 text-decoration: none;
@@ -146,7 +147,7 @@ height: 45%;
 cursor: pointer;
 float: center;
 font-family: "Caudex",serif;
-margin-top: 3rem;
+margin-top: 5rem;
 `
 
 const NavBtn = styled.div`

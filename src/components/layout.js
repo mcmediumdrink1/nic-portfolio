@@ -60,9 +60,7 @@ function Layout({ pageTitle, children }) {
         <header className={siteTitle}>{data.site.siteMetadata.title}</header>
         <h1 className={subHeader}>{data.site.siteMetadata.subHeader}</h1>
         </Link>
-      <span>
        <Bars onClick ={() => setShowMenu(!showMenu)}/>
-      </span>
         <NavMenu>
           {menuData.map((item,index) => (
             <NavLink to={item.link} key={index}>

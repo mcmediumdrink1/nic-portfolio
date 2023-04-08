@@ -13,6 +13,7 @@
     "gatsby-cli": "^5.8.0",
     "gatsby-image": "^3.11.0",
     "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-google-tagmanager": "^5.8.0",
     "gatsby-plugin-image": "^3.8.0",
     "gatsby-plugin-manifest": "^5.8.0",
     "gatsby-plugin-mdx": "^5.8.0",

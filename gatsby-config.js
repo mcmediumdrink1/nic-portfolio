@@ -16,6 +16,17 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-NLWWNDD",
+
+        includeInDevelopment: false,
+  
+        enableWebVitalsTracking: true,
+
+      },
+    },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-mdx",
     "gatsby-plugin-image",
@@ -90,16 +101,6 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: "GTM-NLWWNDD",
 
-        includeInDevelopment: false,
-  
-        enableWebVitalsTracking: true,
-
-      },
-    },
   ],
 }

@@ -11,10 +11,10 @@ import {
   subHeader
 } from './layout.module.css'
 import { GlobalStyle } from './GlobalStyles'
-import {menuData} from '../data/MenuData'
+import { menuData } from '../data/MenuData'
 import { Button } from './Button'
-import {FaBars} from 'react-icons/fa'
-import {useState} from 'react'
+import { FaBars } from 'react-icons/fa'
+import { useState } from 'react'
 
 
 
@@ -34,48 +34,48 @@ function Layout({ pageTitle, children }) {
 
   let menu
 
-  if(showMenu){
-    menu=
-    <HMenu>
-      <MobileNavMenu>
-        <MobileNavLink>
-          <MobileLinkList >
-          {menuData.map((item,index) => (
-            <MobileNavLink to={item.link} key={index}>
-              {item.title}
-            </MobileNavLink>
-          ))}
-</MobileLinkList>
-</MobileNavLink>
-</MobileNavMenu>
-    </HMenu>
+  if (showMenu) {
+    menu =
+      <HMenu>
+        <MobileNavMenu>
+          <MobileNavLink>
+            <MobileLinkList >
+              {menuData.map((item, index) => (
+                <MobileNavLink to={item.link} key={index}>
+                  {item.title}
+                </MobileNavLink>
+              ))}
+            </MobileLinkList>
+          </MobileNavLink>
+        </MobileNavMenu>
+      </HMenu>
   }
 
   return (
 
     <div className={container}>
 
-       <Nav>
-       <Link to="/" className={navLinkText} style={{ textDecoration: 'none' }}>
-        <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-        <h1 className={subHeader}>{data.site.siteMetadata.subHeader}</h1>
+      <Nav>
+        <Link to="/" className={navLinkText} style={{ textDecoration: 'none' }}>
+          <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+          <h1 className={subHeader}>{data.site.siteMetadata.subHeader}</h1>
         </Link>
-       <Bars onClick ={() => setShowMenu(!showMenu)}/>
+        <Bars onClick={() => setShowMenu(!showMenu)} />
         <NavMenu>
-          {menuData.map((item,index) => (
+          {menuData.map((item, index) => (
             <NavLink to={item.link} key={index}>
               {item.title}
             </NavLink>
           ))}
         </NavMenu>
-        <NavBtn>
-          <Button to = "/" big="true" primary="true" round="true">Contact</Button>
-        </NavBtn>
-        </Nav>
-        {menu}
-    <main>
+        {/* <NavBtn>
+          <Button to="/" big="true" primary="true" round="true">Contact</Button>
+        </NavBtn> */}
+      </Nav>
+      {menu}
+      <main>
         {children}
-    </main>
+      </main>
     </div>
 
   )
@@ -110,6 +110,7 @@ const NavMenu = styled.div`
 display: flex;
 align-items:center;
 fill: #F2EFE8;
+justify-content:center;
 
 @media screen and (max-width: 768px){
 display: none;
@@ -200,6 +201,6 @@ const MobileLink = styled.li`
 background: #DEC4E9;
 cursor: pointer;
 font-family: "Eczar",serif;
-font-size: clamp(1rem, 1vw, 3rem);
+font-size: clamp(.75rem, 1vw, 3rem);
 
 `

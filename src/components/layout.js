@@ -15,6 +15,7 @@ import { GlobalStyle } from './GlobalStyles'
 import { menuData } from '../data/MenuData'
 import { Button } from './Button'
 import { FaBars } from 'react-icons/fa'
+import { MdClose } from 'react-icons/md';
 import { useState } from 'react'
 
 
@@ -197,6 +198,7 @@ width: 100%;
 z-index: 50;
 opacity: 95%;
 font-family: "Eczar",serif;
+transition: transform 300ms;
 
 `
 

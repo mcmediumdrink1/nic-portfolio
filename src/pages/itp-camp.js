@@ -29,28 +29,28 @@ className={itunesImage}
 <br/><p>Through our inputs, we’re able to imagine an array of influences that can help shape the visual experience. We may want to visualize our favorite artist as we listen to them on Spotify, and consider their existing visual design language or terms in the artist’s bio that can inform what we see. Or we’re playing a record on vinyl, and we can quickly listen for and identify the song, artist and album, query the track listing through the web, and sync the visual to that sound. Or we would like to visualize sounds in nature -- perhaps the noise captured by NASA’s Mars Perseverance rover, which launched with microphones aboard.</p>
 <br /><p>Includes:
   <ul>
-<li>- Spotify API / Apple Music / YouTube API / ShazamKit</li>
-<li>- Live audio (line-in/mic-in)</li>
-<li>- Computer vision</li>
-<li>- Web scraping</li>
+<li>Spotify API / Apple Music / YouTube API / ShazamKit</li>
+<li>Live audio (line-in/mic-in)</li>
+<li>Computer vision</li>
+<li>Web scraping</li>
 </ul></p>
 <br /><p>Tranformations + Decoding</p>
 <br /><p>This is where the beauty unfolds. As structured and unstructured data points are extracted from the inputs, we will begin to process, learn from, and creatively transform this data so it can be rendered as a companion to the source. </p>
 <br/><p>Includes:
   <ul>
-<li>- Deep learning and machine learning models</li>
-<li>- Natural Language Processing models</li>
-<li>- Generative AI</li>
+<li>Deep learning and machine learning models</li>
+<li>Natural Language Processing models</li>
+<li>Generative AI</li>
 </ul></p>
 <br /><p>Outputs</p>
 <br /><p>After the data is transformed, the returned feedback will be our one-of-one accompanying visual outputs. This could vary based on use case or desired experience. Perhaps it’s a video to be displayed in-app or instead, signals to interact with the physical world, such as an on-stage projection mapping during a live concert or to create a tactile experience through tangible media that allows someone hearing impaired to experience sound.
 </p>
 <br /><p>Includes:
   <ul>
-<li>- Video</li>
-<li>- Vector images</li>
-<li>- MIDI/Light programming</li>
-<li>- 3D models</li>
+<li>Video</li>
+<li>Vector images</li>
+<li>MIDI/Light programming</li>
+<li>3D models</li>
 </ul></p>
 <br /><p>I appreciate the time and attention you’ve given to my application. I am looking forward to attending NYU’s ITP Summer Camp 2023 and so hopeful to develop this project (and others) with backing from a community of like-minded and restless Campers, Session Leaders, and Counselors.</p>
 <br /><p>Cheers,</p>

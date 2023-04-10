@@ -8,7 +8,8 @@ import {
   navLinkItem,
   navLinkText,
   siteTitle,
-  subHeader
+  subHeader,
+  privacyPolicy
 } from './layout.module.css'
 import { GlobalStyle } from './GlobalStyles'
 import { menuData } from '../data/MenuData'
@@ -41,7 +42,7 @@ function Layout({ pageTitle, children }) {
           <MobileNavLink>
             <MobileLinkList >
               {menuData.map((item, index) => (
-                <MobileNavLink to={item.link} key={index}>
+                <MobileNavLink to={item.link} key={index} activeStyle={{ color: '#154495' }}>
                   {item.title}
                 </MobileNavLink>
               ))}
@@ -63,7 +64,7 @@ function Layout({ pageTitle, children }) {
         <Bars onClick={() => setShowMenu(!showMenu)} />
         <NavMenu>
           {menuData.map((item, index) => (
-            <NavLink to={item.link} key={index}>
+            <NavLink to={item.link} key={index} activeStyle={{ color: '#DEC4E9' }}>
               {item.title}
             </NavLink>
           ))}
@@ -72,10 +73,17 @@ function Layout({ pageTitle, children }) {
           <Button to="/" big="true" primary="true" round="true">Contact</Button>
         </NavBtn> */}
       </Nav>
+
       {menu}
       <main>
         {children}
+        <FMenu>
+      <Link to ="/privacy-policy"  style={{ textDecoration: 'none' }}>
+        <p className={subHeader}>Privacy Policy</p>
+        </Link>
+        </FMenu>
       </main>
+
     </div>
 
   )
@@ -136,7 +144,7 @@ display: none;
 const MobileNavLink = styled(Link)`
 fill: red;
 text-color: red;
-font-size: 3rem;
+font-size: clamp(2rem, 1vw, 2.5rem);
 font-weight: bold;
 display:flex;
 align-items: center;
@@ -191,6 +199,16 @@ opacity: 95%;
 font-family: "Eczar",serif;
 
 `
+
+const FMenu = styled.nav`
+height: 30px;
+display: flex;
+justify-content: space-between;
+padding: 0.5rem calc((100vw - 3000px)/2);
+z-index: 0;
+position: relative;
+background: #181B2C;
+`
 const MobileLinkList = styled.ul`
 background: #DEC4E9;
 font-family: "Eczar",serif;
@@ -201,6 +219,6 @@ const MobileLink = styled.li`
 background: #DEC4E9;
 cursor: pointer;
 font-family: "Eczar",serif;
-font-size: clamp(.75rem, 1vw, 3rem);
+font-size: clamp(.5rem, 1vw, 2.5rem);
 
 `

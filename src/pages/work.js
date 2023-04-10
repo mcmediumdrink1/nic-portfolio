@@ -20,7 +20,7 @@ const WorkPage = () => {
         className={dashboardImage}
         />
 <WorkP1>
-<p>Pictured above is a sample dashboard designed for USAF Recruiting to encompass cross-channel marketing performance. Please note that the charts shown above include only mock sample data and do not reflect true performance in order to protect sensitive client information.</p>
+<WorkP2>Pictured above is a sample dashboard designed for USAF Recruiting to encompass cross-channel marketing performance. Please note that the charts shown above include only mock sample data and do not reflect true performance in order to protect sensitive client information.</WorkP2>
       <br /><p>Data analytics often feels esoteric and confounding to the very people who benefit most from its understanding. In other words, measuring and interpreting data is not a lite task, especially taking complex concepts and calculations and conveying them to the layperson.</p>
       <br /><p>And then, we’re faced with another dilemma. All too often, the road to delivering these clean and ‘easy to digest’ analyses strips us of all imagination in how findings are presented.</p>
       <br /><p>There is assuredly another way -- an artistic route which envisions measurement, analysis, and visualization of data just as much an art as it is a science. Nic has made it his mission to work with technology and data not as a means to an end but instead as a method of artistic narration. </p>
@@ -31,8 +31,8 @@ const WorkPage = () => {
       </Wrapper>
       <Main />
       <WrapperAlt>
-        <WorkP2>
-      <p>Video captured during overnight Embark trip on behalf of U.S. Navy Recruiting aboard the U.S.S. John C. Stennis (CVN 74). </p>
+        <WorkP1>
+      <WorkP2>Video captured during overnight Embark trip on behalf of U.S. Navy Recruiting aboard the U.S.S. John C. Stennis (CVN 74). </WorkP2>
       <br/><p>Nic’s experience has encompassed:</p>
 <li>Full website analytics and media tracking implementation through tag and pixel setup  </li>
 <li>Event-Driven Data Layer implementation to scale across Google Analytics (Universal Analytics + GA4) and Adobe Analytics</li>
@@ -40,7 +40,7 @@ const WorkPage = () => {
 <li>Creating integrated dashboard and automation through Tableau and Google Data Studio</li>
 <li>Writing Python scripts for web scraping, as well as data ETL and creating notebooks for data analysis</li>
 <li>Web design and development (including this very website through React.js)</li>
-</WorkP2>
+</WorkP1>
 </WrapperAlt>
 
 </Work>
@@ -125,7 +125,9 @@ padding-top:1rem;
 `
 
 const WorkP2 = styled.p`
-font-size: clamp(.75rem, 1vw, 1.5rem);
+font-size: clamp(.75rem, 1vw, 1rem);
 padding-left:24px;
-padding-bottom: 120px;
+font-weight: light;
+justify-content: center;
+text-align:center;
 `

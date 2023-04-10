@@ -50,7 +50,7 @@
 
   .static-image {
     position: absolute,
-    
+
 }
 
 .sub-header {
@@ -65,4 +65,13 @@
   cursor: pointer;
   font-weight: lighter;
   letter-spacing: 0.10em;
+}
+
+.privacy-policy {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  display:block;
+  align-items: center;
+  background: blue;
+  
 }

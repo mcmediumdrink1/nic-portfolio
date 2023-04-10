@@ -96,6 +96,38 @@
 } 
 }
 
+.itunes-image{
+  display:flex;
+  margin-right: auto;
+  /*max-width: 600px;*/
+  justify-content: 'left';
+  filter: brightness(70%);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1.5);
+  float: right;
+  object-fit:fill;
+  margin: 1rem;
+
+&hover{
+  filter: brightness(100%);
+
+} 
+}
+
+.dashboard-image{
+  display:flex;
+  margin-left: auto;
+  /*max-width: 600px;*/
+  justify-content: 'right';
+  filter: brightness(70%);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  float: right;
+  object-fit:fill;
+
+&hover{
+  filter: brightness(100%);
+
+} 
+}
 *{
   margin: 0px;
   padding:0;

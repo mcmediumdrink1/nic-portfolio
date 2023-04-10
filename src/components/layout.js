@@ -61,7 +61,7 @@ function Layout({ pageTitle, children }) {
           <header className={siteTitle}>{data.site.siteMetadata.title}</header>
           <h1 className={subHeader}>{data.site.siteMetadata.subHeader}</h1>
         </Link>
-        <Bars onClick={() => setShowMenu(!showMenu)} />
+        <Bars onClick={() => {setShowMenu(!showMenu); window.dataLayer.push({'event': 'mobile_nav_click'})}} /> 
         <NavMenu>
           {menuData.map((item, index) => (
             <NavLink to={item.link} key={index} activeStyle={{ color: '#DEC4E9' }}>

@@ -77,12 +77,10 @@ padding-top: 120px;
 
 const ITP1 = styled.p`
 font-size: clamp(.75rem, 1vw, 1.5rem);
-padding-right:24px;
 padding-top:1rem;
 padding-bottom: 5rem;
 `
 
 const ITP2 = styled.p`
 font-size: clamp(.75rem, 1vw, 1.5rem);
-padding-left:24px;
 `

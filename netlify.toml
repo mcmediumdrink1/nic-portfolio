@@ -1,0 +1,25 @@
+# Plain static site: no build step, Netlify serves site/ as-is.
+[build]
+  publish = "site"
+  command = "echo 'static site, nothing to build'"
+
+# Retired pages
+[[redirects]]
+  from = "/itp-camp"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/itp-camp/"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

@@ -117,6 +117,10 @@ p { margin: 0 0 1.1em; }
 .nav-list a:hover,
 .nav-list a[aria-current="page"] { color: var(--lilac); }
 
+.nav-gel { display: inline-flex; align-items: center; gap: 0.25rem; }
+.nav-gel img { height: 22px; width: auto; transition: opacity 0.2s; }
+.nav-gel:hover img { opacity: 0.8; }
+
 .nav-toggle {
   display: none;
   background: none;
@@ -150,6 +154,8 @@ p { margin: 0 0 1.1em; }
   }
   .nav-list a:hover,
   .nav-list a[aria-current="page"] { color: #6b3f80; }
+  /* cream logo would vanish on the lilac overlay; render it in navy */
+  .nav-gel img { height: 2.4rem; filter: brightness(0.12); }
   .nav-open .nav-list { visibility: visible; opacity: 1; }
   /* backdrop-filter would trap the fixed overlay inside the header */
   .nav-open .site-header { backdrop-filter: none; }
@@ -213,7 +219,15 @@ p { margin: 0 0 1.1em; }
   background: rgba(24, 27, 44, 0.5);
   transition: border-color 0.2s, color 0.2s;
 }
-.hero-gel strong { font-family: var(--font-display); color: var(--accent); }
+.nowrap { white-space: nowrap; }
+
+.gel-mark {
+  display: inline-block;
+  height: 1.6em;
+  width: auto;
+  margin: 0 0.15em;
+  vertical-align: -0.45em;
+}
 .hero-gel:hover { border-color: var(--accent); color: var(--ink); }
 
 /* ---------- interior pages ---------- */

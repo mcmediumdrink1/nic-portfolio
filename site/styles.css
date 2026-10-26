@@ -143,14 +143,14 @@ p { margin: 0 0 1.1em; }
     transition: opacity 0.2s ease, visibility 0.2s;
   }
   .nav-list a {
-    color: var(--bg);
+    color: var(--accent);
     font-size: 1.75rem;
     font-weight: 400;
     letter-spacing: 0.04em;
     text-transform: lowercase;
   }
   .nav-list a:hover,
-  .nav-list a[aria-current="page"] { color: #6b3f80; }
+  .nav-list a[aria-current="page"] { color: var(--bg); }
   .nav-open .nav-list { visibility: visible; opacity: 1; }
   /* backdrop-filter would trap the fixed overlay inside the header */
   .nav-open .site-header { backdrop-filter: none; }
